@@ -1,0 +1,16 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Introduction &amp; Background</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41910</md:content-id>
+  <md:title>Introduction &amp; Background</md:title>
+  <md:abstract/>
+  <md:uuid>8192cd3b-cce0-40cb-8c7c-0c3a9c5a3924</md:uuid>
+</metadata>
+
+<content>
+    <para id="id1171113229632">Sometimes it is very necessary for musicians and music fans to identify notes from music pieces. For a single note, this might be very easy even just by hearing. However, if it is an orchestra, then it is nearly impossible to identify every note being played. To help people with this need, we decided to use our knowledge in signal processing to write a Matlab program that could recognize notes in a melody. </para>
+    <para id="id1171113586582">General background: </para>
+    <para id="id1171106622683">For any sound played by an instrument, the pitch of the sound is determined by the fundamental frequency, while the relative strength of individual harmonics determines the timbre. Odd order harmonics work against fundamental frequency, whereas even order harmonics enforce the fundamental frequency to make the sound smoother. Human ears find even order harmonics more comfortable. </para>
+    <para id="id1171106594305">And for different musical instruments, if they play the same note, the fundamental frequency of their spectrum would be the same, but the values of harmonics will be different. The varying height of those harmonics determines the unique timbre of the instrument, but the harmonics will all appear at fixed frequencies. So it is plausible to identify the note by looking at its spectrum and find corresponding fundamental frequency without worrying about which instrument played that note.</para>
+  </content>
+</document>

@@ -1,0 +1,47 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Testing of the program</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41909</md:content-id>
+  <md:title>Testing of the program</md:title>
+  <md:abstract/>
+  <md:uuid>ceb10149-e9c9-48c6-80db-09d72421e447</md:uuid>
+</metadata>
+
+<content>
+    <para id="id1167641234225">Test of the program:</para>
+    <para id="id1167641233197">We tested our program with 6 signals. For generality, we arbitrarily chose signals of different instruments, such as guitar, violin and piano, and signals of different complexity (single note, chord with 3 notes and chord with 5 notes). Among all these tests, 5 out of 6 succeeded. In the failed test, the input signal was a dual-note chord: A4 and E5 by piano. The program successfully recognized E5 but failed to identify A4. After analyzing we think the reason is that the 3<sup>rd</sup> harmonic of A4 is very close to the 2<sup>nd</sup> harmonic of E5, so this gives an error when the program tries to distinguish the two. But other than that, the program works fine. It demonstrates the ability to identify notes in a melody, with or without noise, and by different instruments. </para>
+    <para id="id1167641233046">The following are two trials we made with details.</para>
+    <para id="id1167641234325">I. Trial with a single note:</para>
+    <para id="id1167641232457">The input is a single piano B4 note with duration of about 0.1 sec. It is being extracted from a wav file. We can see its spectrum and time domain waveform below:</para>
+    <figure id="id1167641234413">
+      <media id="id1167641234413_media" alt="">
+        <image mime-type="image/jpg" src="../../media/graphics1.jpg" id="id1167641234413__onlineimage" height="248" width="550"/>
+      </media>
+    </figure>
+    <para id="id1167641232614">Note that in our program we use 44K Hz as the sample frequency, but the test signal may be sampled in a different frequency. (Like this one, being sampled with 11025 Hz)</para>
+    <para id="id1167641231687">To fit that signal in the program, we need to resample the input with the rate 44k Hz. This can be realized with the command:</para>
+    <para id="id1167641231799">input1=resample (input, 44000, fs);</para>
+    <para id="id1167641231762">With fs being the original sample frequency of the input.</para>
+    <para id="id1167641234256">As shown below, the program successfully detected the pitch of the note. And the program also returns the first 8 peaks of the harmonics of the note.</para>
+    <figure id="id1167641231730">
+      <media id="id1167641231730_media" alt="">
+        <image mime-type="image/jpg" src="../../media/graphics2.jpg" id="id1167641231730__onlineimage" height="98" width="565"/>
+      </media>
+    </figure>
+    <para id="id1167641231498">II. Trial with a chord of three notes</para>
+    <para id="id1167641231812">This time we change the input to a chord with notes: E3, G3 and C4, played by a guitar. Its spectrum and time domain waveform are shown below:</para>
+    <figure id="id1167641283018">
+      <media id="id1167641283018_media" alt="">
+        <image mime-type="image/jpg" src="../../media/graphics3.jpg" id="id1167641283018__onlineimage" height="295" width="552"/>
+      </media>
+    </figure>
+    <para id="id1167641232783">Again we convert the sample rate to 44k Hz and the program returns the correct results. Each column of the matrix represents the amplitudes of harmonics of corresponding note.</para>
+    <para id="id1167641279398">
+      <figure id="id1167641282201">
+        <media id="id1167641282201_media" alt="">
+          <image mime-type="image/jpg" src="../../media/graphics4.jpg" id="id1167641282201__onlineimage" height="196" width="313"/>
+        </media>
+      </figure>
+    </para>
+  </content>
+</document>

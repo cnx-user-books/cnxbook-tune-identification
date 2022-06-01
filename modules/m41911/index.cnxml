@@ -1,0 +1,15 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Difficulty and application</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41911</md:content-id>
+  <md:title>Difficulty and application</md:title>
+  <md:abstract/>
+  <md:uuid>665f2426-0e2c-407c-afaf-f2ea0f89175f</md:uuid>
+</metadata>
+
+<content>
+    <para id="id1171099264448">Difficulty encountered:</para>
+    <para id="id1171100482909">In the frequency domain, a given single note is composed of a fundamental frequency and many harmonics which has frequencies that are multiples of the fundamental frequency. As a result, the identification of a single note would be relatively easy. However, when we observe the spectrum of a chord containing more than three notes, it is very hard to say exactly what the three notes are by one's eyes. The difficulty is that when multiple notes are played at the same time, the frequency spectrum of the signal becomes very messy and the spectrum of different notes somehow mixes together and become something blurry with all the notes hidden behind it. In order to solve this problem, we need to develop an algorithm that can still detect the characteristics of each note even when they intervene with each other and make each other 'invisible' on the spectrum.Application</para>
+    <para id="eip-881">Application</para><para id="id1171113578263">The most obvious application of tone identification is to help students learning music. If a student wants to play a piece of music without an actual music sheet, it would be very frustrating for being unable to identify tones in the music. This is where our tone-identifier can come in handy. The program can help the students to convert the audio signal he hears into visible music notes by just simply input the sound signal to the program. The program can also be helpful for professionals in music-relate field if we somehow improve the codes and algorithm. For example, if we improve the algorithm and optimize the codes we can make the program instantaneously convert audio signal to music notes. If we make this happen, a composer can greatly benefit from it since the program can recognize what the composer is playing and output the music sheet instantly. Further more, we can also make the program more sensitive to pitch. By this we mean that with a more detailed notes chart embedded in the program we can make the program to detect how close a played note is to the targeted frequency. And with this program in hand, tuner can work more efficiently</para>
+  </content>
+</document>
