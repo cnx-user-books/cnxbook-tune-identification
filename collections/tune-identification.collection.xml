@@ -1,44 +1,17 @@
-<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en">
+<?xml version="1.0"?>
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en" authors="Di Meng">
   <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
-  <md:content-id>col11399</md:content-id>
-  <md:title>Tune Identification </md:title>
-  
-  
-  <md:license url="http://creativecommons.org/licenses/by/3.0/"/>
-  <md:language>en</md:language>
-
-  
-
-  
-  
-  
-  
-  
-
-  <md:uuid>a3787b56-6a29-429b-9a21-3deef633065d</md:uuid>
-<md:slug>tune-identification</md:slug>
-</metadata>
-
+    <md:content-id>col11399</md:content-id>
+    <md:title>Tune Identification </md:title>
+    <md:license url="http://creativecommons.org/licenses/by/3.0/"/>
+    <md:language>en</md:language>
+    <md:uuid>a3787b56-6a29-429b-9a21-3deef633065d</md:uuid>
+    <md:slug>tune-identification</md:slug>
+  </metadata>
   <col:content>
-    
-      <col:module document="m41910"/>
-        
-      
-    
-    
-      <col:module document="m41912"/>
-        
-      
-    
-    
-      <col:module document="m41909"/>
-        
-      
-    
-    
-      <col:module document="m41911"/>
-        
-      
-    
+    <col:module document="m41910"/>
+    <col:module document="m41912"/>
+    <col:module document="m41909"/>
+    <col:module document="m41911"/>
   </col:content>
 </col:collection>
